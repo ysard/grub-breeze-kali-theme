@@ -1,0 +1,72 @@
+# Breeze GRUB theme for Kali Linux
+#
+# 2015, Gustavo Castro < gustawho [at] gmail [dot] com >
+# 2016, Ysard
+#
+# Some rights reserved. This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License.
+#
+
+desktop-image: "kali-wallpaper_1920x1080.png"
+
+title-text: ""
+#title-font: "DejaVu Regular 16"
+#title-color: "#fcfcfc"
+#message-font: "DejaVu Regular 14"
+#message-color: "#fcfcfc"
+terminal-font: "DejaVu Sans Mono Regular 12"
+terminal-box: "terminal_*.png"
+
++ boot_menu {
+    left = 0%
+    width = 100%
+    top = 25%
+    height = 50%	
+
+    menu_pixmap_style = "boot_menu_*.png"
+
+    item_font = "DejaVu Sans Mono Regular 12"
+    item_color = "#fcfcfc"
+    item_height = 44
+    item_icon_space = 15
+    item_spacing = 5
+    item_padding = 50
+
+    selected_item_font = "DejaVu Sans Mono Bold 12"
+    selected_item_color= "#fcfcfc"
+    selected_item_pixmap_style = "select_*.png"
+
+    icon_height = 44
+    icon_width = 44
+
+    scrollbar = true
+    scrollbar_width = 20
+    scrollbar_thumb = "slider_*.png"
+}
+
++ progress_bar {
+    id = "__timeout__"
+    left = 33%
+    width = 33%
+    top = 80%
+    height = 5
+    #height n'est pas pris en compte !
+    show_text = false
+    text = ""
+    fg_color = #3daee9
+    bg_color = #31363b
+    border_color = #31363b
+}
+
++ label {
+    left = 50%-300
+    top = 75%-23
+    height = 30
+    width = 600
+    
+    font = "DejaVu Sans Mono Regular 10"
+    color = "#fcfcfc"
+    align = "center"
+    
+    text = "@KEYMAP_SHORT@"
+    # MIDDLE: Press enter to boot the selected OS, `e' to edit the commands before booting or `c' for a command-line.
+}
