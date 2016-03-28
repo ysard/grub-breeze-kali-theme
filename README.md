@@ -18,6 +18,9 @@ First, clone the git repository:
 You have to put the files in `/boot/grub/themes/my_theme`.
 Remember the folder, it will be reused later.
 
+Note that the main wallpaper (`kali-wallpaper_1920x1080.png`) is quite heavy (4,5Mo),
+you might want to reduce it.
+
 
 # GRUB configuration
 
